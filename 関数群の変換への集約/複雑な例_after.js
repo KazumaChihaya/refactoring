@@ -2,7 +2,7 @@
 
 reading = {customer: "ivan", quantity: 10, month: 5, year: 2017};
 
-enrichReading(original) {
+function enrichReading(original) {
   const result = _.cloneDeep(original);
   result.baseCharge = calculateBaseCharge(aReading);
   result.taxableCharge = taxAbleCharge(aReading);

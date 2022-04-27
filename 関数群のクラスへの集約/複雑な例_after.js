@@ -21,6 +21,7 @@ class Reading {
     return Math.max(0, aReading.baseCharge - taxThreshold(aReading.year));
   }
 }
+
 function client1() {
   const rawReading = acquireReading();
   const aReading = new Reading(rawReading);
